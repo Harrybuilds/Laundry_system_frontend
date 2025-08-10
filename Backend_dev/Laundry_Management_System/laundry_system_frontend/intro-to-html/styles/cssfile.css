@@ -1,0 +1,862 @@
+body {
+    padding: 40px;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d8cf0;
+    font-family: sans-serif;
+    color: white;
+    position: relative;
+}
+.avatar-initials {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.profile_picture {
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 1px, solid, gray;
+    padding: 10px;
+    display: inline-block;
+}
+.data {
+    display: inline-block;
+    line-height: 5px;
+    color: #2d8cf0;
+}
+.personal_info {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    border: 1px solid gray;
+    color: blue;
+}
+.bio, .skills .projects {
+    padding: 10px
+}
+.button-container {
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+}
+.inner-button {
+    background-color: white;
+    display: inline-flex;
+}
+.uber-button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+.uber-button:hover {
+    background-color: white;
+    color: black;
+        box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5)
+}
+.uber-button:active {
+    opacity: 0.2;
+}
+.amazon-button {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    padding: 5px;
+    margin: 8px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+.github-button {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    width: 80px;
+    cursor: pointer;
+}
+.getstarted-button {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    padding: 5px;
+    margin: 8px;
+    margin-right: 0px;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    width: 100px;
+    cursor: pointer;
+}
+.download-button {
+    color: rgb(108, 117, 125);
+    padding: 5px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(108, 117, 125);
+    font-size: large;
+    width: 100px;
+    cursor: pointer;
+}
+.apply-button {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 15px;
+    border: none;
+    font-size: large;
+    width: 280px;
+    cursor: pointer;
+}
+.save-button {
+    border: 1px solid rgb(10, 102, 194);
+    border-radius: 15px;
+    color: rgb(10, 102, 194);
+    padding: 5px;
+    margin-right: 8px;
+    margin-left: 0px;
+    width: 70px;
+    cursor: pointer;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.video-title {
+    font-size: 15px;
+    font-weight: 700;
+    width: 250px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.video-stats {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 15px;
+}
+.video-author {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 10px;
+}
+.video-description {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    width: 280px;
+    line-height: 23px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.apple-text {
+    background-color: rgb(227, 65, 64);
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: white;
+    font-size: 14px;
+}
+.shop-now:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.nested-layout {
+    background-color: gray;
+    padding: 10px;
+    margin-top: 10px;
+}
+.white-background {
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+}
+.profile-pic-container {
+    display: inline-block;
+    margin-right: 10px;
+}
+.profile-pic {
+    border-radius: 40px;
+    width: 40px;
+}
+.profile-info {
+    display: inline-block;
+    margin-right: 100px;
+    width: 100px;
+}
+.follow-button-container {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 12px;
+}
+.follow-button {
+    background-color: #2d8cf0;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.profile-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.profile-item {
+    color: rgb(96, 96, 96);
+}
+.profile-category {
+    color: rgb(96, 96, 96);
+}
+.task10b-wrapper {
+    background-color: gray;
+    margin-top: 15px;
+    padding: 10px;
+}
+.task10b {
+    background-color: white;
+}
+.thumbnail {
+    display: inline-block;
+    padding: 5px;
+}
+.thumbnail-pic {
+    width: 250px;
+}
+.video-infor{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 25px;
+}
+.video-titlle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 280px;
+    margin-bottom: 10px;
+    font-size: large;
+}
+.video-owner, .video-statistics {
+    color: rgb(96, 96, 96);
+}
+.task10e-wrapper {
+    margin-top: 15px;
+    background-color: gray;
+    padding: 10px;
+}
+.task10e {
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+}
+.image-container {
+    padding: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.image10e{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0;
+}
+.profile-description {
+    padding-left: 10px;
+    border: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    padding-top: 10px;
+    border-top: none;
+    margin-bottom: 10px;
+}
+.profil-name {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.profile-pict-container {
+    margin: 5px;
+}
+.profile-pict {
+    border-radius: 40px;
+    width: 20px;
+}
+.mutual-friends {
+    display: inline-block;
+    color: rgb(96, 96, 96);
+    vertical-align: top;
+    font-size: small;
+    padding-top: 7px;
+}
+.add-friend-button {
+    background-color: #2d8cf0;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding:7px;
+}
+.div1 {
+    background-color: lightblue;
+    margin-top: 10px;
+}
+.div2 {
+    background-color: lightpink;
+    margin-top: 10px;
+}
+.grid-layout {
+    display: grid;
+    grid-template-columns: 100px 100px 200px;
+    margin-top: 10px;
+}
+.grid-layout2 {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.grid-layout3 {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+}
+.task11a {
+    display: grid;
+    grid-template-columns: 200px 75px;
+}
+.task11b {
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+}
+.task11c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.task11d {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+.imagefriend-grid {
+    display: grid;
+    grid-template-columns: 30px 200px;
+}
+.image11d {
+    width: 100%;
+    height: 100%;
+}
+.mutual-friend {
+    color: rgb(96, 96, 96);
+    font-size: 11px;
+    padding: 5px;
+}
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.flexdiv1 {
+    background-color: lightblue;
+    width: 150px;
+}
+.flexdiv2 {
+    background-color: lightpink;
+    width: 150px;
+}
+.flexdiv3 {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.flexdiv4 {
+    background-color: lightpink;
+    flex: 1;
+    margin-right: 10px;
+}
+.flexdiv5 {
+    background-color: lightblue;
+    width: 100px;
+}
+.flexdiv6 {
+    background-color: lightpink;
+    flex: 1;
+}
+.flexbox-header {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    height: 100px;
+    margin-bottom: 30px;
+    justify-content: end;
+}
+.flexbox-header2 {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    border: 1px solid gray;
+    justify-content: center;
+}
+.flexbox-header3 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    border: 1px solid gray;
+    justify-content: space-between;
+    align-items: center;
+}
+.task12a-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.item1 {
+    background-color: lightblue;
+    width: 200px;
+}
+.item2 {
+    background-color: lightpink;
+}
+.task12b-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.item3 {
+    background-color: lightblue;
+    width: 70px;
+}
+.item4 {
+    background-color: lightpink;
+    flex: 1;
+}
+.task12c-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+.item5 {
+    background-color: lightpink;
+}
+.task12d-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    height: 50px;
+}
+.task12e-flex {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.home, .notify, .msg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.number {
+    background-color:rgb(39, 3, 241);
+    color: white;
+    font-size: small;
+    padding: 5px;
+    border-radius: 5px;
+}
+.task12f-flex {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    height: 45px;
+    align-items: center;
+}
+.left-section {
+    width: 70px;
+    color: white;
+}
+.middle-section {
+    flex: 1;
+}
+.right-section {
+    width: 80px;
+}
+.button-download {
+    color: white;
+    border: 1px solid white;
+    background-color: blueviolet;
+    padding: 4px;
+}
+.search-bar {
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5px;
+    margin-left: 5%;
+    padding-left: 5%;
+    width: 70%;
+}
+
+.task12g-flex {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blueviolet;
+    padding: 10px;
+}
+.up-section, .mid-section, .down-section {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+.pic-section {
+    width:40px;
+    padding: 10px;
+}
+.image {
+    border-radius: 50%;
+    width: 100%;
+}
+.section-data {
+    padding-right: 10px;
+    flex: 1;
+}
+.button-div {
+    align-content: center;
+}
+.just-border {
+    border: 2px solid black;
+    padding: 10px;
+}
+.task13a-nextedflexbox{
+    display: flex;
+    margin-top: 10px;
+}
+.left2-section {
+    display: flex;
+    background-color: lightpink;
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.right2-section {
+    background-color: lightblue;
+    width: 200px;
+}
+.itembox {
+    background-color: black;
+    color: white;
+}
+.inner-right-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-section {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+.email-data1 {
+    padding: 10px;
+}
+.sender-pic-container {
+    display: inline-block;
+    margin-top: 10px;
+}
+.sender-pic {
+    width: 45px;
+    border-radius: 22px;
+}
+.email-detail {
+    display: inline-block;
+    width: 88%;
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.email-title, .email-heading, .email-body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.email-title {
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+    width: 85%;
+
+}
+.time-of-email {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(96, 96, 96);
+}
+.email-heading {
+    font-weight: 800;
+    font-size: 12px;
+}
+.email-body {
+    font-size: 12px;
+}
+.email-data {
+    display: flex;
+    padding: 5px;
+}
+.email-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 88%;
+    margin-left: 5px;
+}
+.email-layout2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.task13d-flexbox,.task13e-flexbox, .task13g-nextedflexbox {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.task13g-nextedflexbox {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 360px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile-layer {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.contents {
+    width: 350px;
+}
+.profile-data {
+    display: flex;
+}
+.profile-displayname {
+    font-weight: 900;
+}
+.profile-username {
+    color: gray;
+    margin-left: 5px;
+}
+.link-layer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+}
+.space-area {
+    width: 100px;
+}
+.fetched-linked-components {
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 70px;
+}
+.thumbnail-space {
+    width: 150px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 10px 0 0 10px;
+}
+.fetched-contents {
+    padding: 10px;
+    line-height: 18px;
+}
+.fetched-link-title {
+    font-weight: 700;
+}
+
+.position-item1 {
+    background-color: lightblue;
+    color: white;
+    position: fixed;
+    height: 50px;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+.position-item2 {
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+}
+.position-item3 {
+    background-color: lightpink;
+    width: 200px;
+    height: 200px;
+}
+.task14a-cssposition {
+    position: fixed;
+    right: 20px;
+    background-color: black;
+    color:white;
+    bottom: 20px;
+}
+.task14b-cssposition {
+    position: fixed;
+    background-color: greenyellow;
+    top: 50px;
+    right:0;
+    bottom: 0;
+    width: 100px;
+    color: white;
+}
+
+.task14c-cssposition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+}
+.overlay {
+    position: fixed;
+    background-color: white;
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.modal-title {
+    font-size: larger;
+    
+    font-weight: 900;
+}
+.modal-text {
+    font-weight: 600;
+}
+.close-button {
+    background-color: rgb(250, 85, 85);
+    border: 1px solid gray;
+}
+.cancel-button {
+    position: absolute;
+    background-color: red;
+    color: white;
+    border: 1px solid gray;
+    top: 0;
+    right: 0;
+}
+.task14e-cssposition {
+    border: 1px solid gray;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    justify-content: space-between;
+    height: 40px;
+}
+.profile-data2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-button {
+    margin-left: 8px;
+    background-color: white;
+    color: black;
+    padding: 7px;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 5px;
+    margin-right: 30px;
+}
+.task14f-cssposition {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 52px;
+    left: 0;
+    height: 200px;
+}
+.first-sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 10px;
+}
+.second-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 100px;
+    background-color: rgb(185, 184, 184);
+    line-height: 25px;
+}
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info {
+    color: white;
+    font-size: 12px;
+}
+.plus-sign {
+    margin-right: 15px;
+    color: rgb(237, 238, 238);
+}
+.hashtags {
+    color: rgb(221, 223, 223);
+}
+.sidebar-position {
+    position: fixed;
+    top: 252px;
+    left: 0;
+    width: 80px;
+    background-color: greenyellow;
+    bottom: 0;
+}
+.cssposition-absolute {
+    position: absolute;
+    background-color: red;
+    top: 50px;
+    right: 10px;
+    color: white;
+}

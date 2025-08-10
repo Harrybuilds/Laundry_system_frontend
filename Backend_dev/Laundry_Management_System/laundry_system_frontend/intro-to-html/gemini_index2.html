@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile Page</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+
+            /* --- Navigation Styles (from previous response) --- */
+            nav {
+                background-color: #333;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                position: relative;
+            }
+
+            nav ul li {
+                display: inline-block;
+                position: relative;
+            }
+
+            nav ul li a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+
+            nav ul li a:hover {
+                background-color: #575757;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #444;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                left: 0;
+                top: 100%;
+            }
+
+            .dropdown-content li {
+                display: block;
+            }
+
+            .dropdown-content li a {
+                padding: 12px 16px;
+                text-align: left;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown.active .dropdown-content {
+                display: block;
+            }
+
+
+            /* --- Profile Styles --- */
+            .profile {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+
+            .profile h3 {
+                color: #333;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+
+            /* New Flex container for Profile Header */
+            .profile-header {
+                display: flex; /* Makes children (picture and info) align in a row */
+                align-items: center; /* Vertically centers items */
+                gap: 30px; /* Space between the picture and text */
+                margin-bottom: 30px; /* Space below this header section */
+            }
+
+            .profile_picture {
+                background-color: aliceblue;
+                border-radius: 20px;
+                border: 1px solid gray;
+                padding: 10px;
+                /* No need for display: inline-block; anymore, flex handles it */
+                /* Removed margin-right as gap handles spacing */
+                flex-shrink: 0; /* Prevents the picture from shrinking */
+            }
+            .avatar {
+                width: 200px;
+                height: 200px;
+                border-radius: 100px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #2d8cf0;
+                font-family: sans-serif;
+                color: white;
+                position: relative;
+                font-size: 4em;
+            }
+            .avatar-initials {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                pointer-events: none;
+            }
+
+            .profile-details-text {
+                /* Styles for the text next to the picture */
+                text-align: left;
+                flex-grow: 1; /* Allows this div to take up available space */
+            }
+
+            .profile-details-text h4 {
+                margin: 0; /* Remove default margins to control spacing */
+                line-height: 1.4; /* Improve readability */
+                color: #333; /* Darker color for main text */
+            }
+
+
+            /* --- Personal Info (original blue box) --- */
+            .personal_info {
+                background-color: #2d8cf0;
+                border-radius: 20px;
+                border: 1px solid gray;
+                color: white;
+                padding: 20px;
+                margin-top: 20px; /* Still keeps space between this and the new header */
+                overflow: hidden;
+            }
+
+            .personal_info h3, .personal_info h4 {
+                color: white;
+                margin-top: 0;
+            }
+
+            .personal_info ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .personal_info ul li {
+                margin-bottom: 5px;
+            }
+
+            .personal_info a {
+                color: #add8e6;
+                text-decoration: none;
+            }
+
+            .personal_info a:hover {
+                text-decoration: underline;
+            }
+            
+            #footer {
+                text-align: center;
+                padding: 20px;
+                background-color: #333;
+                color: white;
+                margin-top: 40px;
+            }
+        </style>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropbtn" onclick="toggleDropdown()">Menu &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#bio">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="profile">
+            <h3>My Profile</h3>
+            
+            <div class="profile-header"> <div class="profile_picture">
+                    <object class="avatar"
+                            type="image/png"
+                            data="avatars/memoji-african-american-man-white-background-emoji_826801-6856.jpg"
+                            aria-label="User Avatar">
+                        <div class="avatar-initials">HA</div>
+                    </object>
+                </div>
+                
+                <div class="profile-details-text"> <h4>Onuoha Harrison Chialuka</h4>
+                    <h4>Admin</h4>
+                    <h4>Nigeria</h4>
+                </div>
+            </div> <div class="personal_info">
+                <div id="bio">
+                    <h3>Personal Information</h3>
+                    <p>A Software Engineer, based in Nigeria</p>
+                    <p>I use tech to provide solutions that solves real world problems</p>
+                </div>
+
+                <div id="contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>phone: 08037784218</li>
+                        <li>Email: harrisochialuka@gmail.com</li>
+                        <li>Github: <a href="https://github.com/harrybuilds">github.com/harrybuilds</a></li>
+                        <li>LinkedIn: <a href="https://linkedin.com/in/harry">linkedin.com/in/harry</a></li>
+                    </ul>
+                </div>
+            
+                <div id="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Frontend Web Development</li>
+                        <li>Backend Web Development with python/Django</li>
+                        <li>Database Management (MySQL)</li>
+                        <li>Teamwork collaboration</li>
+                    </ul>
+                </div>          
+
+                <div id="projects">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li>Frontend Laundry system: <a href="#">link</a></li>
+                        <li>Backend Laundry system: <a href="#">link</a></li>
+                        <li>Backend authentication and authorization system: <a href="#">link</a></li>
+                        <li>Backend Hotel Management system: <a href="#">link</a></li>
+                        <li>Some other projects on my Github: <a href="https://github.com/harrybuilds">link</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>My Goal and Aspirations</h3>
+                    <p>I'm currently learning Frontend Web Development, to complement a current knowledge level of Backend Web Development</p>
+                    <p>I'm aspiring to be a Full Stack Software Engineer, then move on to learn Machine Learning and AI Development</p>
+                </div>
+            </div>
+        </div>
+        
+        <section id="footer">
+            <h3>footer</h3>
+                <footer>
+                    <p>&copy; 2025 Harrison. Made with Love in Nigeria</p>
+                </footer>
+        </section>
+
+        <script>
+            function toggleDropdown() {
+                // Find the dropdown-content within the same parent .dropdown as the clicked button
+                // This makes it work correctly if you have multiple dropdowns later
+                const dropbtn = event.target;
+                const dropdownParent = dropbtn.closest('.dropdown');
+                const dropdownContent = dropdownParent.querySelector('.dropdown-content');
+                
+                dropdownContent.classList.toggle('active');
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        // Only close if it's the active one
+                        if (openDropdown.classList.contains('active')) {
+                            openDropdown.classList.remove('active');
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
